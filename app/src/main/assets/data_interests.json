@@ -1,0 +1,85 @@
+{
+  "categories": [
+    {
+      "category_id": "0",
+      "name": "Religious",
+      "notices": [
+        {
+          "notice_id": "0",
+          "title": "Togo Unrest: Caution against travelling to Togo on Friday",
+          "publisher": "GIS",
+          "date_published": "yesti",
+          "image": "image_ghana_border.png"
+        },
+        {
+          "notice_id": "1",
+          "title": "Fragrant Worship",
+          "publisher": "Covenant Voices, Ahenfie",
+          "date_published": "moments ago",
+          "image": "image_fragrant_worship.jpg"
+        },
+        {
+          "notice_id": "2",
+          "title": "Jesus Factor",
+          "publisher": "Overflow Inc & Thrivent Entertainment Group",
+          "date_published": "yesti",
+          "image": "image_jesus_factor.png"
+        }
+      ]
+    },
+    {
+      "category_id": "1",
+      "name": "Education",
+      "notices": [
+        {
+          "notice_id": "3",
+          "title": "Teachers to write exams for licence",
+          "publisher": "The National Teachers Council (NTC)",
+          "date_published": "2 days ago",
+          "image": "image_teacher_student.png"
+        },
+        {
+          "notice_id": "4",
+          "title": "Scholarship/fellowship in Japan",
+          "publisher": "Scholarships Secretariat",
+          "date_published": "August 31, 2017",
+          "image": "image_scholarship.jpg"
+        },
+        {
+          "notice_id": "5",
+          "title": "Sale of Application Forms for 2016/17 Academic Year - Online Application Forms",
+          "publisher": "University of Cape Coast",
+          "date_published": "March 15, 2016",
+          "image": "image_education_online.jpg"
+        },
+        {
+          "notice_id": "6",
+          "title": "KETASCO to host Junior Camp Ghana 2015 on November 6",
+          "publisher": "David Curtis Mintah",
+          "date_published": "today",
+          "image": "image_ketasco.jpg"
+        },
+        {
+          "notice_id": "7",
+          "title": "2017 International PhD Summer School-Land Use and Mobile Livelihoods",
+          "publisher": "University of Cape Coast",
+          "date_published": "today",
+          "image": "image_summer_school.jpg"
+        }
+      ]
+    },
+    {
+      "category_id": "2",
+      "name": "Entertainment",
+      "notices": [
+        {
+          "notice_id": "8",
+          "title": "Some of the world's most expensive cars imported into Ghana",
+          "publisher": "David Curtis Mintah",
+          "date_published": "2 days ago",
+          "image": "image_expensive_car.png"
+        }
+      ]
+    }
+  ]
+}

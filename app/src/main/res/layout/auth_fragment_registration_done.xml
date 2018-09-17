@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.WrapperStyle"
+    tools:context="com.technativ.menotice.auth.ui.phone.PhoneVerificationActivity">
+
+    <TextView
+        style="@style/AppTheme.ShadowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Thank You for Signing Up!"/>
+
+    <Button
+        android:id="@+id/start_using"
+        style="@style/AppTheme.StartUsingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="32dp"
+        android:text="Start Using" />
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpacedEditText">
+        <attr name="spacingProportion" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="padding_horizontal" format="dimension" />
+        <attr name="padding_vertical" format="dimension" />
+    </declare-styleable>
+</resources>

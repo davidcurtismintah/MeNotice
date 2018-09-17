@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_content"
+    android:layout_width="@dimen/notice_width"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image_card"
+        android:layout_width="@dimen/notice_image_width"
+        android:layout_height="@dimen/notice_image_height"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/notice_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/notice_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_gravity="top|end"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_favorite_border" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/notice_title"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="2"
+        android:text="Title"
+        app:layout_constraintBottom_toTopOf="@+id/tvPublisher"
+        app:layout_constraintLeft_toLeftOf="@+id/tvPublisher"
+        app:layout_constraintRight_toRightOf="@+id/tvPublisher" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPublisher"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="2"
+        android:text="Publisher"
+        app:layout_constraintBottom_toTopOf="@+id/tvDatePublished"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDatePublished"
+        app:layout_constraintRight_toRightOf="@+id/tvDatePublished"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="1dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDatePublished"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text="date"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginBottom="0dp" />
+
+</android.support.constraint.ConstraintLayout>

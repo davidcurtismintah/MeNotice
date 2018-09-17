@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.technativ.menotice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".main.LeakCatcher"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".auth.ui.phone.PhoneVerificationActivity"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".main.MenoticeActivity"
+            android:theme="@style/AppTheme.ActionMode"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.activities.NoticeDetailsActivity"
+            android:label="@string/title_activity_notice_details"
+            android:parentActivityName=".main.MenoticeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.MenoticeActivity" />
+        </activity>
+        <activity
+            android:name=".main.activities.PublisherDetailsActivity"
+            android:label="@string/title_activity_follows_details"
+            android:parentActivityName="com.technativ.menotice.main.MenoticeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.technativ.menotice.main.MenoticeActivity" />
+        </activity>
+        <activity
+            android:name=".main.activities.NoticeAboutActivity"
+            android:label="@string/title_activity_notice_about"
+            android:parentActivityName=".main.activities.NoticeDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.activities.NoticeDetailsActivity" />
+        </activity>
+    </application>
+
+</manifest>

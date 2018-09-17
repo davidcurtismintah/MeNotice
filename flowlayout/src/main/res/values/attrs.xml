@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable title="FlowLayout">
+        <attr title="padding_horizontal" format="dimension" />
+        <attr title="padding_vertical" format="dimension" />
+    </declare-styleable>
+</resources>

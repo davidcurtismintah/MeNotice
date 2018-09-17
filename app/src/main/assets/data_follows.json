@@ -1,0 +1,58 @@
+[
+  {
+    "publisher_id": "0",
+    "name": "GIS",
+    "about": "Ghana Immigration Service",
+    "logo": "logo_gis.jpg",
+    "last_publish_time": "13 hr. ago"
+  },
+  {
+    "publisher_id": "1",
+    "name": "Covenant Voices, Ahenfie",
+    "about": "Covenant Voices, Ahenfie",
+    "logo": "logo_ahenfie.jpg",
+    "last_publish_time": "2 days ago"
+  },
+  {
+    "publisher_id": "2",
+    "name": "Overflow Inc & Thrivent Entertainment Group",
+    "about": "Overflow Inc & Thrivent Entertainment Group",
+    "logo": "logo_overflow.jpg",
+    "last_publish_time": "2 days ago"
+  },
+  {
+    "publisher_id": "3",
+    "name": "The National Teachers Council (NTC)",
+    "about": "The National Teachers Council (NTC)",
+    "logo": "logo_gnat.jpg",
+    "last_publish_time": "2 days ago"
+  },
+  {
+    "publisher_id": "4",
+    "name": "Scholarships Secretariat",
+    "about": "Scholarships Secretariat",
+    "logo": "image_scholarship.jpg",
+    "last_publish_time": "3 days ago"
+  },
+  {
+    "publisher_id": "5",
+    "name": "University of Cape Coast",
+    "about": "University of Cape Coast",
+    "logo": "logo_ucc.png",
+    "last_publish_time": "a week ago"
+  },
+  {
+    "publisher_id": "6",
+    "name": "David Curtis Mintah",
+    "about": "David Curtis Mintah",
+    "logo": "logo_my_logo.jpg",
+    "last_publish_time": "3 weeks ago"
+  },
+  {
+    "publisher_id": "7",
+    "name": "Ketasco",
+    "about": "Keta Ssenior High School",
+    "logo": "logo_ketasco.png",
+    "last_publish_time": "a month ago"
+  }
+]

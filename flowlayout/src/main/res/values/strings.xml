@@ -1,0 +1,6 @@
+<resources>
+    <string title="app_name">FlowLayout</string>
+
+    <!--  Action Mode Menu Items -->
+    <string title="add">Add</string>
+</resources>

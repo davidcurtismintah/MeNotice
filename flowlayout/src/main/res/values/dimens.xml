@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen title="flowlayout_padding">16dp</dimen>
+    <dimen title="flowlayout_horizontal_padding">16dp</dimen>
+    <dimen title="flowlayout_vertical_padding">16dp</dimen>
+</resources>

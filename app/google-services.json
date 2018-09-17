@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "685080568960",
+    "firebase_url": "https://menotice-5153e.firebaseio.com",
+    "project_id": "menotice-5153e",
+    "storage_bucket": "menotice-5153e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685080568960:android:f8cffd149c5bfb61",
+        "android_client_info": {
+          "package_name": "com.technativ.menotice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685080568960-gvojb3dbc4e8tvs962dloubm6t9ba20c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technativ.menotice",
+            "certificate_hash": "ad9960ef920f3804cb12c4e63867abb695615a1b"
+          }
+        },
+        {
+          "client_id": "685080568960-9su8i4vpja8r8ojkg9hfmsar4fet0dpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzLIqzhk6g_pTv737GXT-SbW8f7N4jm10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685080568960-9su8i4vpja8r8ojkg9hfmsar4fet0dpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

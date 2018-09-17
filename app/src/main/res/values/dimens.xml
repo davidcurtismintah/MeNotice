@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_height">56dp</dimen>
+    <dimen name="fab_width">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_top_plus_bottom">32dp</dimen>
+
+    <dimen name="empty_list_message_text_size">16sp</dimen>
+    <!--<dimen name="recycler_view_paddingBottom">88dp</dimen>-->
+    <dimen name="recycler_view_item_vertical_space">8dp</dimen>
+    <dimen name="call_log_action_height">48dp</dimen>
+    <dimen name="call_log_action_horizontal_padding">24dp</dimen>
+
+    <dimen name="auth_method_button_width">208dp</dimen>
+    <dimen name="auth_method_button_marginBottom">8dp</dimen>
+    <dimen name="auth_method_button_drawablePadding">12dp</dimen>
+
+    <dimen name="body_padding_bottom">12dp</dimen>
+    <dimen name="heading_padding_bottom">12dp</dimen>
+    <dimen name="wrapper_padding_horiz">16dp</dimen>
+    <dimen name="field_padding_vert">16dp</dimen>
+    <dimen name="submit_button_margin_top">24dp</dimen>
+
+    <dimen name="flowlayout_padding">16dp</dimen>
+    <dimen name="flowlayout_horizontal_padding">16dp</dimen>
+    <dimen name="flowlayout_vertical_padding">16dp</dimen>
+
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="search_bar_height">64dp</dimen>
+    <dimen name="action_bar_margin">8dp</dimen>
+    <dimen name="search_bar_margin">8dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="notice_width">152dp</dimen>
+    <dimen name="notice_image_width">144dp</dimen>
+    <dimen name="notice_image_height">216dp</dimen>
+</resources>

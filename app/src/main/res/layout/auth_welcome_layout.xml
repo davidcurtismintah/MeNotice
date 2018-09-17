@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.WrapperStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome_note"
+        style="@style/AppTheme.ShadowText"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:text="Menotice"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/copyright"
+        style="@style/AppTheme.Text.BodyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/welcome_note"
+        android:layout_marginTop="@dimen/field_padding_vert"
+        android:gravity="bottom|center"
+        android:text="Copyright 2017"
+        android:textColor="?android:textColorTertiary" />
+</RelativeLayout>

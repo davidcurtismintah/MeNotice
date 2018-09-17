@@ -1,0 +1,121 @@
+/*
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.technativ.menotice.auth;
+
+import android.content.Intent;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.support.annotation.Nullable;
+
+import com.technativ.menotice.auth.ui.ExtraConstants;
+
+/**
+ * A container that encapsulates the result of authenticating with an Identity Provider.
+ */
+public class IdpResponse implements Parcelable {
+    private final String mPhoneNumber;
+    private final int mErrorCode;
+
+    private IdpResponse(int errorCode) {
+        this(null, errorCode);
+    }
+
+    private IdpResponse(
+            String phoneNumber,
+            int errorCode) {
+        mPhoneNumber = phoneNumber;
+        mErrorCode = errorCode;
+    }
+
+    /**
+     * Extract the {@link IdpResponse} from the flow's result intent.
+     *
+     * @param resultIntent The intent which {@code onActivityResult} was called with.
+     * @return The IdpResponse containing the token(s) from signing in with the Idp
+     */
+    @Nullable
+    public static IdpResponse fromResultIntent(Intent resultIntent) {
+        if (resultIntent != null) {
+            return resultIntent.getParcelableExtra(ExtraConstants.EXTRA_IDP_RESPONSE);
+        } else {
+            return null;
+        }
+    }
+
+
+    public static Intent getErrorCodeIntent(int errorCode) {
+        return new IdpResponse(errorCode).toIntent();
+    }
+
+
+    public Intent toIntent() {
+        return new Intent().putExtra(ExtraConstants.EXTRA_IDP_RESPONSE, this);
+    }
+
+    /**
+     * Get the phone number used to sign in.
+     */
+    @Nullable
+    public String getPhoneNumber() {
+        return mPhoneNumber;
+    }
+
+    /**
+     * Get the error code for a failed sign in
+     */
+    public int getErrorCode() {
+        return mErrorCode;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mPhoneNumber);
+        dest.writeInt(mErrorCode);
+    }
+
+    public static final Creator<IdpResponse> CREATOR = new Creator<IdpResponse>() {
+        @Override
+        public IdpResponse createFromParcel(Parcel in) {
+            return new IdpResponse(
+                    in.readString(),
+                    in.readInt()
+            );
+        }
+
+        @Override
+        public IdpResponse[] newArray(int size) {
+            return new IdpResponse[size];
+        }
+    };
+
+
+    public static class Builder {
+        private String mPhoneNumber;
+
+        public Builder setPhoneNumber(String phoneNumber) {
+            mPhoneNumber = phoneNumber;
+            return this;
+        }
+
+        public IdpResponse build() {
+            return new IdpResponse(mPhoneNumber, ResultCodes.OK);
+        }
+    }
+}
